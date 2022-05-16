@@ -39,7 +39,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "phaser": "^3.55.2"
+    "algosdk": "^1.16.0",
+    "crypto-browserify": "^3.12.0",
+    "ipfs": "^0.62.3",
+    "ipfs-core": "^0.14.3",
+    "phaser": "^3.55.2",
+    "phaser3-rex-plugins": "^1.1.69",
+    "stream-browserify": "^3.0.0"
   },
   "devDependencies": {
     "@yandeu/prettier-config": "^0.0.3",
