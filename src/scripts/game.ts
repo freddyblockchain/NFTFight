@@ -37,7 +37,6 @@ const config = {
     default: 'arcade',
     arcade: {
       debug: false,
-      gravity: { y: 400 }
     }
   }
 }
@@ -45,5 +44,4 @@ const config = {
 window.addEventListener('load', async () => {
   await initIPFS()
   const game = new Phaser.Game(config)
-  glRenderer = new Phaser.Renderer.WebGL.WebGLRenderer(game)
 })
