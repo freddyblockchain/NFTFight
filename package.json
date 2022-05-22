@@ -1,43 +1,19 @@
 {
-  "name": "phaser-project-template",
+  "name": "nftfight",
   "version": "3.55.2",
-  "description": "Phaser 3 starter template with TypeScript and webpack.",
-  "homepage": "https://github.com/yandeu/phaser-project-template#readme",
+  "description": "Phaser 3 NFT game",
+  "homepage": "https://freddyblockchain.github.io/NFTFight",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --config webpack/webpack.dev.js",
     "build": "rimraf dist && webpack --config webpack/webpack.prod.js",
     "bundle": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "serve": "serve dist",
     "format": "prettier --check src/scripts/**",
     "format:write": "prettier --write src/scripts/**"
   },
-  "keywords": [
-    "Phaser",
-    "Phaser 3",
-    "Phaser3",
-    "html5 game",
-    "TypeScript",
-    "webpack",
-    "starter"
-  ],
-  "author": {
-    "name": "Yannick Deubel",
-    "url": "https://github.com/yandeu"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yandeu/phaser-project-template.git"
-  },
-  "template": {
-    "name": "phaser-project-template",
-    "url": "https://github.com/yandeu/phaser-project-template",
-    "author": "Yannick Deubel (https://github.com/yandeu)"
-  },
-  "engines": {
-    "node": ">=12"
-  },
-  "license": "MIT",
   "dependencies": {
     "algosdk": "^1.16.0",
     "crypto-browserify": "^3.12.0",
@@ -45,11 +21,13 @@
     "ipfs-core": "^0.14.3",
     "phaser": "^3.55.2",
     "phaser3-rex-plugins": "^1.1.69",
-    "stream-browserify": "^3.0.0"
+    "stream-browserify": "^3.0.0",
+    "gh-pages": "^4.0.0"
   },
   "devDependencies": {
     "@yandeu/prettier-config": "^0.0.3",
     "copy-webpack-plugin": "^10.1.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "javascript-obfuscator": "^4.0.0",
     "prettier": "^2.5.1",

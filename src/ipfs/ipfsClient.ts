@@ -9,10 +9,8 @@ export const initIPFS = async () => {
 export const getData = async (cat: string) => {
     const res = await ipfs.cat(cat)
 
-    console.log("size is " + res)
 
     let data = ''
-    console.log("before res ")
     for await (const chunk of res) {
         data += chunk.toString()
     }
