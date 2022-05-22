@@ -73,3 +73,8 @@ system
 ## Demo
 
 https://www.youtube.com/watch?v=UiFCqL6TQD0&ab_channel=FrederikNielsen
+
+## Roadmap
+
+* The first thing to do to improve this project is to add gameplay elements related to the NFT, and customization of the NFTs created.
+* The second thing to do would be to add gameplay elements based on whether the person playing NFTFight owns the NFTS, that they are using 
